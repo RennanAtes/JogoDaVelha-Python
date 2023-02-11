@@ -38,7 +38,7 @@ def jogada():
 
         if jogadaInput.isnumeric():
             jogadaInput =int(jogadaInput)
-            if jogadaInput < 9:
+            if jogadaInput < 10:
                 jogada = jogadaInput
             else:
                 print("A sua jogada deve ser entre 1-9")
@@ -85,6 +85,7 @@ def verificarVitoria(map,player1,player2):
         return False
     elif not ' ' in map:
         print("Empate")
+        jogoDaVelhaVisual(map)
         return False
     else:
         return True
