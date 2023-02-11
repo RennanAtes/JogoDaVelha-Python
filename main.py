@@ -72,35 +72,14 @@ def verificarVitoria(map,player1,player2):
 
     #Verificar as linhas horizontais
 
-    if map[1] == player1 and map[2] == player1 and map[3] == player1 or map[1] == player2 and map[2] == player2 and map[3] == player2:
-        jogoDaVelhaVisual(map)
-        print("Venceu")
-        return False
-    elif map[4] == player1 and map[5] == player1 and map[6] == player1 or map[4] == player2 and map[5] == player2 and map[6] == player2:
-        jogoDaVelhaVisual(map)
-        print("Venceu")
-        return False
-    elif map[7] == player1 and map[8] == player1 and map[9] == player1 or map[7] == player2 and map[8] == player2 and map[9] == player2:
-        jogoDaVelhaVisual(map)
-        print("Venceu")
-        return False
-    elif map[1] == player1 and map[4] == player1 and map[7] == player1 or map[1] == player2 and map[4] == player2 and map[7] == player2:
-        jogoDaVelhaVisual(map)
-        print("Venceu")
-        return False
-    elif map[2] == player1 and map[5] == player1 and map[8] == player1 or map[2] == player2 and map[5] == player2 and map[8] == player2:
-        jogoDaVelhaVisual(map)
-        print("Venceu")
-        return False
-    elif map[3] == player1 and map[6] == player1 and map[9] == player1 or map[3] == player2 and map[6] == player2 and map[9] == player2:
-        jogoDaVelhaVisual(map)
-        print("Venceu")
-        return False
-    elif map[1] == player1 and map[5] == player1 and map[9] == player1 or map[1] == player2 and map[5] == player2 and map[9] == player2:
-        jogoDaVelhaVisual(map)
-        print("Venceu")
-        return False
-    elif map[3] == player1 and map[5] == player1 and map[7] == player1 or map[3] == player2 and map[5] == player2 and map[7] == player2:
+    if map[1] == player1 and map[2] == player1 and map[3] == player1 or map[1] == player2 and map[2] == player2 and map[3] == player2\
+    or map[4] == player1 and map[5] == player1 and map[6] == player1 or map[4] == player2 and map[5] == player2 and map[6] == player2\
+    or map[7] == player1 and map[8] == player1 and map[9] == player1 or map[7] == player2 and map[8] == player2 and map[9] == player2\
+    or map[1] == player1 and map[4] == player1 and map[7] == player1 or map[1] == player2 and map[4] == player2 and map[7] == player2\
+    or map[2] == player1 and map[5] == player1 and map[8] == player1 or map[2] == player2 and map[5] == player2 and map[8] == player2\
+    or map[3] == player1 and map[6] == player1 and map[9] == player1 or map[3] == player2 and map[6] == player2 and map[9] == player2\
+    or map[1] == player1 and map[5] == player1 and map[9] == player1 or map[1] == player2 and map[5] == player2 and map[9] == player2\
+    or map[3] == player1 and map[5] == player1 and map[7] == player1 or map[3] == player2 and map[5] == player2 and map[7] == player2:
         jogoDaVelhaVisual(map)
         print("Venceu")
         return False
